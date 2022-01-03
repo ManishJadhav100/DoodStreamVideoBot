@@ -12,11 +12,11 @@ from bs4 import BeautifulSoup
 import requests
 import re
 
-API_ID = '3607276'
+API_ID = 3607276
 API_HASH = '91ccab764e9bd5466ed84e14ae2a5a9c'
 BOT_TOKEN = '5038136978:AAEOKqgQou-2oMi6FNXyTBc5oWoHsttQVxw'
 DOODSTREAM_API_KEY = '15454o7okr1k4l0x5cnfm'
-BITLY_KEY = environ.get('BITLY_KEY')
+BITLY_KEY = 'a32a4de3ff0228e01f976668834c8b139644d6f1'
 CHANNEL = 'mjfreeflix'
 HOWTO = 'howtodownloadmjfreeflix'
 bot = Client('Doodstream bot',
@@ -43,7 +43,7 @@ async def start(bot, message):
 async def start(bot, message):
     await message.reply(
         f"**Hey, {message.chat.first_name}!**\n\n"
-        "**please contact me on @TeleRoid14**")
+        "**please contact me on @ManyaDon007**")
     
 @bot.on_message(filters.text & filters.private)
 async def Doodstream_uploader(bot, message):
@@ -129,8 +129,8 @@ async def Doodstream_up(link):
     v_id = data['result']['filecode']
     #bot.delete_messages(con)
     v_url = 'https://dood.ws/d/' + v_id
-#     s = Shortener(api_key=BITLY_KEY)
-#     v_url = s.bitly.short(v_url)
+    s = Shortener(api_key=BITLY_KEY)
+    v_url = s.bitly.short(v_url)
     return (v_url)
 
 
