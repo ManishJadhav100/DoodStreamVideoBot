@@ -12,13 +12,13 @@ from bs4 import BeautifulSoup
 import requests
 import re
 
-API_ID = '3607276'
-API_HASH = '91ccab764e9bd5466ed84e14ae2a5a9c'
-BOT_TOKEN = '5038136978:AAEOKqgQou-2oMi6FNXyTBc5oWoHsttQVxw'
-DOODSTREAM_API_KEY = '15454o7okr1k4l0x5cnfm'
-BITLY_KEY = 'a32a4de3ff0228e01f976668834c8b139644d6f1'
-CHANNEL = 'mjfreeflix'
-HOWTO = 'howtodownloadmjfreeflix'
+API_ID = environ.get('API_ID')
+API_HASH = environ.get('API_HASH')
+BOT_TOKEN = environ.get('BOT_TOKEN')
+DOODSTREAM_API_KEY = environ.get('DOODSTREAM_API_KEY')
+BITLY_KEY = environ.get('BITLY_KEY')
+CHANNEL = environ.get('CHANNEL')
+HOWTO = environ.get('HOWTO')
 bot = Client('Doodstream bot',
              api_id=API_ID,
              api_hash=API_HASH,
@@ -31,19 +31,19 @@ bot = Client('Doodstream bot',
 async def start(bot, message):
     await message.reply(
         f"**Hey, {message.chat.first_name}!**\n\n"
-        "**This is a Doodstream URL convertor bot and able to upload all direct links to Doodstream,just send me link or full post...**")
+        "**This is a Doodstream URL convertor bot and able to upload all direct links to Doodstream,just send me link or full post... Developed By @ManyaDon007**")
 
 @bot.on_message(filters.command('help') & filters.private)
 async def start(bot, message):
     await message.reply(
         f"**Hello, {message.chat.first_name}!**\n\n"
-        "**If you send post which had Doodstream Links.....  I'll convert & replace all Doodstream links with your Doodstream links \nReport Bugs at @TeleRoid14**")
+        "**If you send post which had Doodstream Links.....  I'll convert & replace all Doodstream links with your Doodstream links \nReport Bugs at @Manya@007**")
 
 @bot.on_message(filters.command('report') & filters.private)
 async def start(bot, message):
     await message.reply(
         f"**Hey, {message.chat.first_name}!**\n\n"
-        "**please contact me on @ManyaDon007**")
+        "**please contact me on @Manya@007**")
     
 @bot.on_message(filters.text & filters.private)
 async def Doodstream_uploader(bot, message):
