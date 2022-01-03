@@ -11,31 +11,31 @@
     "env": {
         "BOT_TOKEN": {
             "description": "Your bot token (must add)",
-            "value": ""
+            "value": "5038136978:AAEOKqgQou-2oMi6FNXyTBc5oWoHsttQVxw"
         },
         "API_ID": {
             "description": "Get this value from https://my.telegram.org",
-            "value": "12345"
+            "value": "3607276"
         },
         "API_HASH": {
             "description": "Get this value from https://my.telegram.org",
-            "value": "e9bfa07a6ac45e6d5f374c84ab05c"
+            "value": "91ccab764e9bd5466ed84e14ae2a5a9c"
         },
         "DOODSTREAM_API_KEY": {
             "description": "Get this from https://doodstream.com/api-docs (must change)",
-            "value": "lowiwoajsn"
+            "value": "15454o7okr1k4l0x5cnfm"
         },
          "BITLY_KEY": {
             "description": "Bitly API See Readme for further details",
-            "value": "hakpwppwksjsi882w12dbfdfa559a"
+            "value": "a32a4de3ff0228e01f976668834c8b139644d6f1"
         },
         "CHANNEL": {
             "description": "Enter your telegram channel Username (must change and without @)",
-            "value": "TeleRoidGroup"
+            "value": "mjfreeflix"
         },
         "HOWTO": {
             "description": "Your 'How to Download from Droplink' video link",
-            "value": "TeleRoidGroup/150"
+            "value": "howtodownloadmjfreeflix"
         }
     },
     "addons": [],
@@ -51,3 +51,4 @@
         }
     }
 }
+
